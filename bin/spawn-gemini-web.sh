@@ -10,5 +10,6 @@ docker run -it \
   -v $ANNOS_DIR:/gemini_data \
   -v ${ROOT_DIR}/bin:/root \
   -p 8080:8080 \
+  --entrypoint /opt/bin/gemini \
   sinonkt/docker-gemini \
-  bash
+  browser /dbs/$1 --host 0.0.0.0 --port 8080 --use builtin
