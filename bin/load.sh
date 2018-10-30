@@ -13,6 +13,7 @@ nextflow -log $LOG_DIR/.nextflow.log \
   run $PROJECT_REPO \
   -w $WORK_DIR \
   -resume \
+  -with-trace \
   -with-report ${LOG_DIR}/report.html \
   -with-dag ${LOG_DIR}/flowchart.svg \
   -with-timeline ${LOG_DIR}/timeline.html \
