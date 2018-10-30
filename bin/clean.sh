@@ -1,4 +1,4 @@
-ROOT_DIR=/home/dev/Code
+ROOT_DIR=${HOME}/gemini-playground
 mv ${ROOT_DIR}/works/singularity $ROOT_DIR
 rm -rf ${ROOT_DIR}/.nextflow/*
 rm -rf ${ROOT_DIR}/logs/*

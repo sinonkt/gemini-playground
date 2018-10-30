@@ -1,4 +1,6 @@
-ROOT_DIR=/home/dev/Code
+CORES=32
+PROFILE=local
+ROOT_DIR=${HOME}/gemini-playground
 datetime=$(date -d "today" +"%Y%m%d%H%M")
 # NX_CONFIG=${ROOT_DIR}/nextflow.config
 LOG_DIR=${ROOT_DIR}/logs/${datetime}
@@ -17,4 +19,6 @@ nextflow -log $LOG_DIR/.nextflow.log \
   -with-report ${LOG_DIR}/report.html \
   -with-dag ${LOG_DIR}/flowchart.svg \
   -with-timeline ${LOG_DIR}/timeline.html \
-  "$@"
+  -profile $PROFILE \
+  --rootDir $ROOT_DIR \
+  --loadCpus $CORES

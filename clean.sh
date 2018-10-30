@@ -1,0 +1,1 @@
+rm -rf ${HOME}/go ${HOME}/usr ${HOME}/bin ${HOME}/opt ${HOME}/anaconda
