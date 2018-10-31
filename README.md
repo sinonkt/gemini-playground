@@ -24,8 +24,8 @@ opinionated scripts to managed multiple nextflow based gemini-loading, spawn gem
   ./bin/stop-gemini.sh
   ```
 
-***Notes, Builtin module is not available on web interface. <br/>
-*So, For hardcore user, you can spawn gemini session then query inide docker container directly.
+***Notes, Builtin module is not available on web interface. So<br/>
+***For hardcore user, you can spawn gemini session then query inide docker container directly.
 ```
 ./bin/spawn-gemini.sh
 ```
