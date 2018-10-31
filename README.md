@@ -23,7 +23,7 @@ opinionated scripts to managed multiple nextflow based gemini-loading, spawn gem
   ```
   ./bin/stop-gemini.sh
   ```
-### Quering 
+### Querying 
 we can skip all installation/preprocessing section in [Gemini Doc](https://gemini.readthedocs.io/en/latest/#table-of-contents)
 - [Querying the GEMINI database](https://gemini.readthedocs.io/en/latest/content/querying.html)
 - Querying the gene tables 
