@@ -23,6 +23,16 @@ opinionated scripts to managed multiple nextflow based gemini-loading, spawn gem
   ```
   ./bin/stop-gemini.sh
   ```
+  
+*Notes, Builtin module is not available on web interface.
+*So, For hardcore user you can spawn gemini session then query inide docker container directly.
+```
+./bin/spawn-gemini.sh
+```
+then you will be inside docker container
+```
+gemini query -q "select chrom, start, end, ref, alt, (gts).(*) from variants" /dbs/joint.db
+```
 ### Querying 
 we can skip all installation/preprocessing section in [Gemini Doc](https://gemini.readthedocs.io/en/latest/#table-of-contents)
 - [Querying the GEMINI database](https://gemini.readthedocs.io/en/latest/content/querying.html)
