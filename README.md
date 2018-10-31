@@ -29,7 +29,7 @@ opinionated scripts to managed multiple nextflow based gemini-loading, spawn gem
 ```
 ./bin/spawn-gemini.sh
 ```
-then you will be inside docker container
+then you will be inside docker container, where you can run cmd like this.
 ```
 gemini query -q "select chrom, start, end, ref, alt, (gts).(*) from variants" /dbs/joint.db
 ```
